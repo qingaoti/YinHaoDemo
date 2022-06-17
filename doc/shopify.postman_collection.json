@@ -1,0 +1,314 @@
+{
+	"info": {
+		"_postman_id": "83258a77-0b6c-4bb3-9db1-83f2f80ff7ee",
+		"name": "shopify",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "获取商户信息",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-Shopify-Access-Token",
+						"value": "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",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://qingaoti.myshopify.com/admin/api/2022-04/shop.json",
+					"protocol": "https",
+					"host": [
+						"qingaoti",
+						"myshopify",
+						"com"
+					],
+					"path": [
+						"admin",
+						"api",
+						"2022-04",
+						"shop.json"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "获取商户产品信息",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-Shopify-Access-Token",
+						"value": "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",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://qingaoti.myshopify.com/admin/api/2021-10/products.json?presentment_currencies=USD",
+					"protocol": "https",
+					"host": [
+						"qingaoti",
+						"myshopify",
+						"com"
+					],
+					"path": [
+						"admin",
+						"api",
+						"2021-10",
+						"products.json"
+					],
+					"query": [
+						{
+							"key": "presentment_currencies",
+							"value": "USD"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "获取商户集合",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-Shopify-Access-Token",
+						"value": "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",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://qingaoti.myshopify.com/admin/api/2021-10/products.json?presentment_currencies=USD",
+					"protocol": "https",
+					"host": [
+						"qingaoti",
+						"myshopify",
+						"com"
+					],
+					"path": [
+						"admin",
+						"api",
+						"2021-10",
+						"products.json"
+					],
+					"query": [
+						{
+							"key": "presentment_currencies",
+							"value": "USD"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "查看单个集合",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-Shopify-Access-Token",
+						"value": "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",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://qingaoti.myshopify.com/admin/api/2022-04/collections/841564295.json",
+					"protocol": "https",
+					"host": [
+						"qingaoti",
+						"myshopify",
+						"com"
+					],
+					"path": [
+						"admin",
+						"api",
+						"2022-04",
+						"collections",
+						"841564295.json"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "推送商户产品",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-Shopify-Access-Token",
+						"value": "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",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"product\": {\r\n        \"title\": \"测试post\",\r\n        \"collection\":\"YinHao-Test\",\r\n        \"body_html\": \"\\u003cstrong\\u003eGood snowboard!\\u003c\\/strong\\u003e\",\r\n        \"vendor\": \"Burton\",\r\n        \"product_type\": \"Snowboard\",\r\n        \"tags\": [\r\n            \"Barnes \\u0026 Noble\",\r\n            \"Big Air\",\r\n            \"John's Fav\"\r\n        ]\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://qingaoti.myshopify.com/admin/api/2022-04/products.json",
+					"protocol": "https",
+					"host": [
+						"qingaoti",
+						"myshopify",
+						"com"
+					],
+					"path": [
+						"admin",
+						"api",
+						"2022-04",
+						"products.json"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "添加产品到自定义集合",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-Shopify-Access-Token",
+						"value": "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",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"collect\": {\r\n        \"id\": 1071559578,\r\n        \"collection_id\": 267429806145,\r\n        \"product_id\": 6824874049601,\r\n        \"created_at\": \"2022-04-05T13:09:41-04:00\",\r\n        \"updated_at\": \"2022-04-05T13:09:41-04:00\",\r\n        \"position\": 2,\r\n        \"sort_value\": \"0000000002\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://qingaoti.myshopify.com/admin/api/2022-04/collects.json",
+					"protocol": "https",
+					"host": [
+						"qingaoti",
+						"myshopify",
+						"com"
+					],
+					"path": [
+						"admin",
+						"api",
+						"2022-04",
+						"collects.json"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "本地测试导入文件",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-Shopify-Access-Token",
+						"value": "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",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "demo",
+							"type": "file",
+							"src": "/D:/Workspaces/YinHaoNodeJsDemo/test/app/files/demo.csv"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:7001/product/import/cvs",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "7001",
+					"path": [
+						"product",
+						"import",
+						"cvs"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
