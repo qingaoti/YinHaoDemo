@@ -32,6 +32,7 @@ Exceljs 官方文档推荐csv使用 fast-csv (截图: 在目录doc里的问题1.
 
 mocha 测试上传会经常超时，我还需要研究一下怎么弄。 以前用js写上传的mocha测试是没问题，用ts后感觉mocha支持不是那么好。
 目前上传我是用postmen 测试的。  测试用例丢doc里面了：shopify.postman_collection.json
+使用的 数据是 doc 里面的 demo.cvs
 
 ### Development
 
