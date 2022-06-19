@@ -6,8 +6,6 @@ import BaseController from './base';
  * @controller 商品
  */
 export default class ProductController extends BaseController {
-
-    // @ts-ignore
     /**
      * @summary 批量导入商品,cvs格式
      * @description 按照模板导入

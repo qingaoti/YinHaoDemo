@@ -35,7 +35,7 @@ export default (appInfo: EggAppInfo) => {
     config.bodyParser = {
         formLimit: '10mb',
         jsonLimit: '10mb',
-        textLimit: '10mb'
+        textLimit: '10mb',
         // 值的大小可以根据自己的需求修改
     };
 
@@ -50,7 +50,7 @@ export default (appInfo: EggAppInfo) => {
 
     // add your egg config in here
     config.middleware = [
-        'execption'
+        'execption',
     ];
 
     /**

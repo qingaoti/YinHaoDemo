@@ -25,6 +25,7 @@ export default class AdminBoot implements IBoot {
     async didLoad() {
         // All files have loaded, start plugin here.
         this.ctx.app.logger.info(`初始化商户认证`);
+        await this.ctx.service.oauth.init();
     }
 
     async willReady() {

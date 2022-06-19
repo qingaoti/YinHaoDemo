@@ -48,6 +48,11 @@ export default class Product extends BaseService {
                         name: data['Option2 Name'] || 'test',
                         values: ['155', '159']
                     }
+                ],
+                images: [
+                    {
+                        src: data['Image Src']
+                    }
                 ]
             }
         };
